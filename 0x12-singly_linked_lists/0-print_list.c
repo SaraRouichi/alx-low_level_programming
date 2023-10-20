@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
- * print_list - print element in a linked list 
+ * print_list - print elements in a linked list
  *
  * @h: pointer to head first node
  *
- * Return: Number of nodes 
- */
+ * Return: Number of nodes
+*/
 
 size_t print_list(const list_t *h)
 {
@@ -23,10 +23,11 @@ size_t print_list(const list_t *h)
 			printf("[%d] %s\n", 0, "(nil)");
 		else
 			printf("[%d] %s\n", h->len, h->str);
-		
+
 		/*go to the next node*/
 		h = h->next;
 		/*count number of nodes*/
+		node_count += 1;
 	}
 
 	/*print for the last node*/
